@@ -1,0 +1,21 @@
+.ZHbuttonb{
+       color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 100vh;
+}
+.animate{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveUp 1s linear forwards;
+}
+@keyframes moveUp{
+    100%{
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}

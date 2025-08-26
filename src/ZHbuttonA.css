@@ -1,0 +1,34 @@
+.ZHbuttonA{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+}
+.ZHbuttonA button{
+    color: white;
+    background: blueviolet;
+    padding: 10px 35px;
+    border-radius: 20px;
+border-top-right-radius: 0px;
+ transition: 0.5s;}
+.ZHbuttonA button:hover{
+    border-radius: 20px;
+    color: aqua;
+    cursor: pointer;
+     transition: 0.5s;
+}
+.animate{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveUp 1s linear forwards;
+}
+@keyframes moveUp{
+    100%{
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}

@@ -1,10 +1,15 @@
-import React from 'react'
+import  { Suspense } from 'react'
+import  Router from './Router'
+import "./index.css"
+
 
 const App = () => {
+
   return (
-    <div>
-      <h1>kuch bhi</h1>
-    </div>
+    <Suspense fallback="wait kr na....">
+    <Router/>
+    </Suspense>
+
   )
 }
 
